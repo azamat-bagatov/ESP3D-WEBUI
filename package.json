@@ -29,6 +29,9 @@
   "author": "Luc LEBOSSE",
   "license": "(ISC OR GPL-3.0)",
   "dependencies": {
-    "global": "latest"
+    "global": "latest",
+    "gulp-terser": "^2.1.0",
+    "gulp-uglify-es": "^3.0.0",
+    "rollup": "^3.23.0"
   }
 }

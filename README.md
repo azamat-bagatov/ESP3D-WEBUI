@@ -98,4 +98,11 @@ Check wiki section [Contribution/Development](https://github.com/luc-github/ESP3
 You can submit ticket [here](https://github.com/luc-github/ESP3D-WEBUI/issues) or open discussion if it is not an issue [here](https://github.com/luc-github/ESP3D-WEBUI/discussions) or Join the chat at [![Discord server](https://img.shields.io/discord/752822148795596940?color=blue&label=discord&logo=discord)](https://discord.gg/Z4ujTwE)   
 
 
+## Added stuff
+Replaced the gulp-uglify with gulp-terser, that works with ES6
+
+Run npm install gulp-terser to install the module
+
+To minimise index file, compile it in one language only, for ex:
+gulp package --lang en
  
