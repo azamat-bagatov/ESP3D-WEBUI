@@ -2,7 +2,8 @@ var gulp = require('gulp'),
     jshint = require('gulp-jshint'),
     gulpif = require('gulp-if'),
     concat = require('gulp-concat'),
-    uglify = require('gulp-uglify'),
+    //uglify = require('gulp-uglify'),
+	terser  = require('gulp-terser'),
     cleanCSS = require('gulp-clean-css'),
     removeCode = require('gulp-remove-code'),
     merge = require('merge-stream'),
@@ -284,7 +285,8 @@ function clearlang() {
 function minifyApp() {
     return merge(
         gulp.src(['dist/js/app.js'])
-            .pipe(uglify({mangle: true}))
+			.pipe(terser())
+            //.pipe(uglify({mangle: true}))
             .pipe(gulp.dest('./dist/js/')),
 
         gulp.src('dist/css/style.css')

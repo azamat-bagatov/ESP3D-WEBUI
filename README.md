@@ -97,5 +97,19 @@ Check wiki section [Contribution/Development](https://github.com/luc-github/ESP3
 ## Issues / Questions
 You can submit ticket [here](https://github.com/luc-github/ESP3D-WEBUI/issues) or open discussion if it is not an issue [here](https://github.com/luc-github/ESP3D-WEBUI/discussions) or Join the chat at [![Discord server](https://img.shields.io/discord/752822148795596940?color=blue&label=discord&logo=discord)](https://discord.gg/Z4ujTwE)   
 
+## How to compile an index.html.gz file:
+Install node.js
+
+Open ESP3WEBUI folder, press Alt-D, type cmd and press Enter.
+
+Run this command:
+gulp package
+or
+gulp package --lang en
+for single-language build. 
+
+If that doesn't work, you may need to run this first:
+npm install
+npm install gulp-terser
 
  
